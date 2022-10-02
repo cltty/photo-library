@@ -1,0 +1,14 @@
+<div class="photo" *ngIf="photoObj">
+  <p *ngIf="showTitle">{{ photoObj.author }}</p>
+  <img
+    src="{{ photoUrl }}"
+    alt="{{ photoObj.author }}"
+    (click)="clickOnPhoto()"
+  />
+  <mat-icon
+    *ngIf="useFavoriteIcon"
+    aria-hidden="false"
+    fontIcon="favorite"
+    (click)="clickOnFavorite()"
+  ></mat-icon>
+</div>

@@ -1,0 +1,13 @@
+<div
+  class="container"
+  (window:scroll)="onScroll()"
+  *ngIf="contentLoaded"
+>
+  <photos-list
+    [photos]="photos"
+    [useFavoriteIcon]="true"
+    [showTitle]="true"
+    (clickOnFavoriteEventEmitter)="addToFavorites($event)"
+  ></photos-list>
+</div>
+<mat-spinner [ngClass]="!photos.length ? 'spinner-default-position' : 'spinner-bottom-position'" *ngIf="isLoading"></mat-spinner>

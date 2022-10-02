@@ -1,0 +1,13 @@
+<div *ngIf="contentLoaded" class="single-photo">
+    <photo 
+        [photoObj]="photo"
+        [useGridSize]="false"
+        [showTitle]="false"
+    ></photo>
+
+    <button class="single-photo__action-btn" mat-raised-button color="accent" (click)="onRemove()">
+        Remove from favorites
+    </button>
+</div>
+
+<mat-spinner class="spinner-default-position" *ngIf="!contentLoaded"></mat-spinner>

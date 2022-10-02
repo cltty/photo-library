@@ -1,0 +1,37 @@
+@import "../../../styles.scss";
+
+.header {
+  display: flex;
+  padding: $space-20;
+  background-color: $material-purple;
+  position: sticky;
+  top: 0;
+
+  .action-btns {
+    margin: auto;
+
+    button:nth-child(1) {
+      margin-right: $space-40;
+    }
+
+    button {
+      background-color: $material-purple;
+      color: $white;
+      letter-spacing: $space-3;
+    }
+  }
+
+  .photos-active {
+    button:nth-child(1) {
+      background-color: $material-purple-1;
+      color: $material-purple;
+    }
+  }
+  
+  .favorites-active {
+    button:nth-child(2) {
+      background-color: $material-purple-1;
+      color: $material-purple;
+    }
+  }
+}

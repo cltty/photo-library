@@ -1,0 +1,45 @@
+@import '../../../styles.scss';
+
+.photo {
+  position: relative;
+  
+  img {
+    display: flex;
+    margin: $space-20 auto;
+  }
+
+  p, mat-icon {
+    display: none;
+  }
+
+  &:hover {
+    img {
+      border-radius: $space-9;
+      transition: all 0.4s ease 0s;
+      box-shadow: $space-5 $space-5 $space-40 -10px $shadow-color;
+    }
+
+    mat-icon {
+      display:block;
+      right: $space-180;
+      bottom: $space-20;
+      position: absolute;
+      color: $material-red;
+
+      &:hover {
+        cursor: pointer;
+        height: $space-26;
+        width: $space-26;
+      }
+    }
+
+    p {
+      display:block;
+      position: absolute;
+      left: $space-180;
+      top: $space-10;
+      color: $white;
+      font-weight: 550;
+    }
+  }
+}

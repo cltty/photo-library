@@ -1,0 +1,7 @@
+<photos-list *ngIf="contentLoaded"
+  [photos]="favoritePhotos"
+  [showTitle]="true"
+  (clickOnPhotoEventEmitter)="navigateToSpecificPhoto($event)"
+></photos-list>
+
+<mat-spinner class="spinner-default-position" *ngIf="!contentLoaded" ></mat-spinner>

@@ -1,0 +1,10 @@
+<div class="header">
+  <div
+    class="action-btns"
+    [ngClass]="currentActive === 'photos' ? 'photos-active' : 'favorites-active'"
+  >
+    <button mat-raised-button (click)="clickOnPhoto()">Photos</button>
+
+    <button mat-raised-button (click)="clickOnFavorite()">Favorites</button>
+  </div>
+</div>

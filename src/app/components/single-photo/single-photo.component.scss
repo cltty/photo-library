@@ -1,0 +1,17 @@
+@import "../../../styles.scss";
+
+.single-photo {
+  display: flex;
+  flex-direction: column;
+
+  &__action-btn {
+    width: $space-300;
+    margin: $space-20 auto;
+  }
+
+  button:hover {
+    background-color: $material-red;
+    color: $white;
+    letter-spacing: $space-3;
+  }
+}

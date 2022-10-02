@@ -1,0 +1,10 @@
+<div class="photos-list">
+  <photo *ngFor="let photo of photos"
+    [photoObj]="photo"
+    [useFavoriteIcon]="useFavoriteIcon"
+    [useGridSize]="true"
+    [showTitle]="showTitle"
+    (clickOnFavoriteEventEmitter)="clickOnFavorite(photo)"
+    (clickOnPhotoEventEmitter)="clickOnPhoto(photo)"
+  ></photo>
+</div>
